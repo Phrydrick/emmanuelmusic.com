@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Emmanuel - Contacts </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header-1">
+    <nav>
+         <a href="index.html"><img src="assets/305797522_102284125964307_7603015247194933058_n-transformed.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contactez Nous</h1>
+    </section>
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.2624348858536!2d11.521683669532012!3d3.799314937918658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bd077a3dfc579%3A0x8df25011e388a2c4!2sCarrefour%20odza!5e0!3m2!1sfr!2scm!4v1689475247185!5m2!1sfr!2scm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Face Dovv, Odza</h5>
+                        <p>Yaounde, Cameroun</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+237657223693, +237697061401</h5>
+                        <p>SMS et Whatsapp</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>emmanuelmusic.officiel@gmail.com</h5>
+                        <p>Contactez nous aussi par e-mail</p>
+                    </span>
+                </div>
+            </div>
+        <div class="contact-col">
+
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Votre Nom" required>
+                <input type="email" name="email" placeholder="Votre E-mail" required>
+                <input type="text" name="subject" placeholder="Votre Sujet" required>
+                <textarea rows="8" name="message" placeholder="Votre Message" required></textarea>
+                <button type="submit" class="hero-btn gold-btn">Envoyez Votre Message</button>
+            </form>
+
+
+
+
+        </div>
+        </div>
+
+
+    </section>
+
+    <section class="footer">
+        <h4>Nos Liens</h4>
+        <p>Rejoignez nous et abonnez vous aussi sur nos differentes pages sur les reseaux sociaux <br> et n'hesitez pas a nous envoyer un message sur notre contact Whatsapp</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/victory4s"><i class="fa fa-facebook" ></i></a>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-instagram"></i>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
